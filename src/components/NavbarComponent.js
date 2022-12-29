@@ -1,15 +1,16 @@
-import { Navbar, Container } from "react-bootstrap";
+import { Container, Navbar, Nav } from "react-bootstrap";
 
 function NavbarComponent() {
   return (
-    <Navbar>
+    <Navbar className="nav-color" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">MailGateway</Navbar.Brand>
-        <Navbar.Toggle />
-        <Navbar.Collapse className="justify-content-end">
-          <Navbar.Text>
-            Signed in as: <a href="#login">Mark Otto</a>
-          </Navbar.Text>
+        <Navbar.Brand href="#home">EmailGateway</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">Link</Nav.Link>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>

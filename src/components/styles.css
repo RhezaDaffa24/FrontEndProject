@@ -1,0 +1,24 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  width: 100%;
+}
+.nav-color{
+    background-color: #9E2424;
+    color: white;
+}
+.footer-color{
+    background-color: #9E2424;
+}
